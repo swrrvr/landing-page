@@ -46,7 +46,7 @@ body {
   align-items: center;
   background-color: var(--bg-dark-blue);
   flex-direction: column;
-  flex: 1;
+  height: 25%;
 }
 
 .nav {
@@ -59,7 +59,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 15px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .list>li:nth-child(1) {
@@ -117,10 +117,39 @@ li>a {
 
 .info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1;
   background-color: white;
+  gap: 50px;
+  padding: 50px;
+}
+
+.info-container {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.info-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.info-card-div {
+  border: medium solid var(--button-light-blue);
+  border-radius: 20px;
+  height: 150px;
+  width: 150px;
 }
 
 .quote {
