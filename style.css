@@ -46,11 +46,13 @@ body {
   align-items: center;
   background-color: var(--bg-dark-blue);
   flex-direction: column;
-  height: 25%;
+  height: 40%;
+  /*flex: 1;*/
 }
 
 .nav {
   width: 75%;
+  margin-top: 50px;
 }
 
 .list {
@@ -120,10 +122,11 @@ li>a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
   background-color: white;
   gap: 50px;
   padding: 50px;
+  height: 40%;
+  /*flex: 1;*/
 }
 
 .info-container {
@@ -140,9 +143,11 @@ li>a {
 
 .info-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  gap: 7px;
 }
 
 .info-card-div {
@@ -152,18 +157,69 @@ li>a {
   width: 150px;
 }
 
+.info-card-text {
+  width: 150px;
+  text-align: center;
+}
+
 .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-gray-quote);
+  flex: 1;
+  /*height: 25%;*/
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  text-wrap: wrap;
+  width: 75%;
+}
+
+.quote-author {
+  width: 65%;
+  font-weight: bold;
+  text-align: right;
+}
+
+.call-to-action {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  background-color: var(--bg-gray-quote);
+  height: 30%;
+}
+
+.cta-container {
+  background-color: var(--button-light-blue);
+  width: 75%;
+  height: 50%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.cta-button {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: var(--button-light-blue);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .footer {
+  background-color: var(--bg-dark-blue);
+  height: 5%;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  background-color: white;
 }
