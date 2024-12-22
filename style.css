@@ -111,6 +111,7 @@ li>a {
 .hero-button {
   background-color: var(--button-light-blue);
   border-radius: 8px;
+  border: 1px solid var(--button-light-blue);
   height: 35px;
   width: 110px;
   color: var(--text-header);
@@ -204,8 +205,8 @@ li>a {
 }
 
 .cta-button {
-  height: 30px;
-  width: 100px;
+  height: 35px;
+  width: 120px;
   color: white;
   background-color: var(--button-light-blue);
   border: 1px solid white;
