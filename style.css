@@ -35,9 +35,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
 }
 
 .header {
@@ -46,8 +46,7 @@ body {
   align-items: center;
   background-color: var(--bg-dark-blue);
   flex-direction: column;
-  height: 40%;
-  /*flex: 1;*/
+  padding: 1rem;
 }
 
 .nav {
@@ -80,6 +79,7 @@ li>a {
   width: 75%;
   display: flex;
   gap: 35px;
+  margin-bottom: 50px;
 }
 
 .sub-layout {
@@ -103,8 +103,9 @@ li>a {
 
 .hero-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-shrink: 2;
 }
 
 .hero-button {
@@ -124,9 +125,7 @@ li>a {
   align-items: center;
   background-color: white;
   gap: 50px;
-  padding: 50px;
-  height: 40%;
-  /*flex: 1;*/
+  padding: 5rem 0;
 }
 
 .info-container {
@@ -168,8 +167,7 @@ li>a {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-gray-quote);
-  flex: 1;
-  /*height: 25%;*/
+  padding: 5rem 0;
 }
 
 .quote-text {
@@ -190,7 +188,8 @@ li>a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30%;
+  /*padding: 5rem 0;*/
+  height: 300px;
 }
 
 .cta-container {
@@ -217,9 +216,9 @@ li>a {
 
 .footer {
   background-color: var(--bg-dark-blue);
-  height: 5%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
